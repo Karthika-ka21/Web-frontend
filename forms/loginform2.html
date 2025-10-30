@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginform2</title>
+    <link rel="stylesheet" href="../fontawesome/fontawesome-free-7.1.0-web/css/all.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            margin:100px auto;
+            width:400px;
+            background:transparent;
+            border: 1px solid black;
+            padding:20px;
+            border-radius: 5px;
+            
+            text-align: center;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: 50px auto;
+            border-radius: 50%;
+            background:transparent ;
+            box-shadow: 0px 0px 5px gray;
+        }
+        form{
+             display: flex;
+  flex-direction: column;
+  align-items: center;
+        }
+        input{
+            width: 80%;
+            height: 35px;
+            margin: 15px 0;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+        .btn{
+            text-align: center;
+            height: 35px;
+            width:80%;
+            font-size: 18px;
+            background-color: white;
+            border: 1px solid black;
+            color:black;
+            margin: 20px 0;
+            border-radius: 30px;
+        }
+        .items{
+            display: flex;
+            justify-content: left;
+            
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        .rem{
+            font-size: 14px;
+            display: flex;
+            justify-content: start;
+        }
+        .items {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://static.vecteezy.com/system/resources/previews/068/208/485/non_2x/user-profile-icon-simple-flat-grey-round-shape-social-media-profile-picture-symbol-user-account-dp-symbol-isolated-on-a-transparent-background-illustration-vector.jpg" alt="User Profile Picture">
+        <form>
+            <input type="text" placeholder="UserName"><br>
+            <input type="password" placeholder="Password"><br>
+            <button class="btn">Login</button><br>
+            <div class="items">
+                <input type="checkbox" id="remember">
+                <label> Remember Me</label>
+                
+            </div>
+
+        </form>
+        
+    </div>
+</body>
+</html>
