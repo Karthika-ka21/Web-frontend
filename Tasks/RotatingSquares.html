@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+        height: 100px;
+        width:100px;
+        
+        margin: 250px auto;
+        position:relative;
+
+    }
+    .items{
+        height: 100px;
+        width:100px;
+        position:absolute;
+        transition:all 2s linear 0s;
+
+
+    }
+    #d1{
+        background-color: red;
+
+    }
+    #d2{
+        background-color: green;
+        
+    }
+    #d3{
+        background-color: yellow;
+        
+    }
+    #d4{
+        background-color: blue;
+        
+        
+    }
+    .container:hover>#d4{
+        transform: translateX(300px) rotate(3600deg);
+    }
+    .container:hover>#d3{
+        transform: translateX(-300px) rotate(3600deg);
+    }
+    .container:hover>#d2{
+        transform: translateY(-200px) rotate(3600deg);
+    }
+    .container:hover>#d1{
+        transform: translateY(200px) rotate(3600deg);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items" id="d1"></div>
+        <div class="items" id="d2"></div>
+        <div class="items" id="d3"></div>
+        <div class="items" id="d4"></div>
+    </div>
+</body>
+</html>
