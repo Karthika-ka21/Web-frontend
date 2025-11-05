@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <script>
+        let a=3
+        let b=9;
+        console.log(a,b,a+b);
+
+        a="apple";
+        b="pie";
+        console.log(a,b,a+" "+b);
+
+        a="asd";
+        b=4;
+        console.log("a+b= ",a+b);
+
+        a=3+7+" apples";
+        console.log("a="+a);
+        console.log("---------------");
+
+        let x=prompt("Enter a number:"); //2
+        let y=prompt("Enter another number:"); //3
+        console.log("sum = ",x+y);
+        console.log("sum = "+x+y); // "23" (string concatenation)
+        console.log(x*y); // 6 (multiplication)
+        //x=abc, y=12 => NaN
+        console.log("--------------");
+
+        let n=10;
+        console.log(n,typeof n); //10,number
+        n=Number("123");
+        console.log(n,typeof n); //123,number
+        n=Number(null); 
+        console.log(n,typeof n); //0,number
+        n=Number("abc");
+        console.log(n,typeof n); //NaN,number
+        n=Number(true);
+        console.log(n,typeof n); //1,number
+        n=Number(false);
+        console.log(n,typeof n); //0,number
+        n=Number(undefined);
+        console.log(n,typeof n); //NaN,number
+        console.log("--------------");
+
+        console.log(10*"10"); //100
+        console.log("10"*true); //10
+        console.log("10"*false); //0
+        console.log("10"*undefined); //NaN
+        console.log(10+undefined); //NaN
+        console.log(10+null); //10
+        console.log("10"+null); //"10null"
+        console.log('abc'-'wer'); //NaN
+    </script>
+</head>
+<body>
+    <h1>Operators & prompt()</h1>
+    <p>In JavaScript, operators are special symbols that perform operations on variables and values.<br>
+         The prompt() function is a built-in function that displays a dialog box asking the user for input.</p>
+</body>
+</html>

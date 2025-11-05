@@ -17,9 +17,12 @@
         margin-right: 20px;
         font-size: 20px;
       }
+      nav > .links > a:hover {
+        color: #ff3c00;    
+      }
         .main-section {
-        height: 350px;
-        background-color: #e9ecef;
+        height: 90vh;
+        background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80')
        }
        .main-section > h1 {
         margin-left: 100px;
@@ -113,20 +116,37 @@
          .main-section > h1 {
           font-size: 40px;
           margin-left: 100px;
+          color: white;
+        }
+        .main-section > p {
+          margin-left: 100px;
+          color: white;
         }
         .btn{
             margin-bottom: 10px;
         }
       }
+      footer {
+      background-color: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    footer a {
+      color: #ff3c00;
+      text-decoration: none;
+      font-weight: 500;
+    }
     </style>
 </head>
 <body>
     <nav class="navbar bg-dark">
         <h1 class="text-white p-2">Result Fitness</h1>
         <div class="links">
-            <a href="#" class="text-white p-2 text-decoration-none">Home</a>
-            <a href="#" class="text-white p-2 text-decoration-none">Contact</a>
-            <a href="#" class="text-white p-2 text-decoration-none">Enquiry</a>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Join Now</a>
         </div>
         <div class="toggler-btn">
         <button class="fs-2"><i class="bi bi-list-task"></i></button>
@@ -134,8 +154,8 @@
         
     </nav>
     <div class="main-section">
-        <h1>Welcome to Result Fitness</h1>
-        <p>Welcome to Result Fitness, your ultimate destination for achieving strength, balance, and confidence. 
+        <h1 style="color:white">Welcome to Result Fitness</h1>
+        <p style="color:white">Welcome to Result Fitness, your ultimate destination for achieving strength, balance, and confidence. 
             Our mission is to help you reach your fitness goals through expert guidance, state-of-the-art equipment,
              and a motivating community. Whether you’re a beginner taking your first step or an athlete pushing limits, 
              we have personalized programs designed for every fitness level. At Result Fitness, we believe results come from consistency, passion, and the right support system. 
@@ -169,5 +189,8 @@
             <p>Active Recovery: Yoga, Stretching, Foam Rolling</p>
         </div>
     </div>
+    <footer>
+    <p>&copy; 2025 Result Fitness. All rights reserved. | Designed by <a href="#">Your Name</a></p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Result Fitness | Join Now</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff3c00;
+    }
+
+    .join-header {
+      background: url('https://media.istockphoto.com/id/1356510492/photo/determined-athletic-woman-running-on-treadmill-while-practicing-in-a-gym.jpg?s=612x612&w=0&k=20&c=omk6zWq2qlR0aGGxvWCckFz1Tw9VaASCaI1KnpMzICA=')
+        no-repeat  center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    .join-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .join-header h2 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+      color: #ff3c00;
+    }
+
+    .join-section {
+      padding: 60px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .plan-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      text-align: center;
+      padding: 40px 25px;
+      transition: 0.3s;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .plan-card h3 {
+      color: #ff3c00;
+      margin-bottom: 15px;
+    }
+
+    .plan-card p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .plan-price {
+      font-size: 1.5rem;
+      color: #111;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+
+    .btn {
+      background-color: #ff3c00;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e63300;
+    }
+
+    .join-form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 50px auto;
+    }
+
+    .join-form h3 {
+      text-align: center;
+      color: #ff3c00;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff3c00;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .join-section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Result Fitness</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Trainers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="join.html">Join Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="join-header">
+    <h2>Join Result Fitness Today</h2>
+  </section>
+
+  <section class="join-section">
+    <div class="plan-card">
+      <h3>Basic Plan</h3>
+      <p>Access to gym equipment</p>
+      <p>Locker facility</p>
+      <p>1 personal training session</p>
+      <p class="plan-price">₹999 / month</p>
+      <button class="btn">Choose Plan</button>
+    </div>
+
+    <div class="plan-card">
+      <h3>Standard Plan</h3>
+      <p>Access to gym & group classes</p>
+      <p>Locker & shower facility</p>
+      <p>3 personal training sessions</p>
+      <p class="plan-price">₹1,499 / month</p>
+      <button class="btn">Choose Plan</button>
+    </div>
+
+    <div class="plan-card">
+      <h3>Premium Plan</h3>
+      <p>Unlimited access to all programs</p>
+      <p>Diet consultation</p>
+      <p>Weekly progress tracking</p>
+      <p class="plan-price">₹2,199 / month</p>
+      <button class="btn">Choose Plan</button>
+    </div>
+  </section>
+
+  <section class="join-form">
+    <h3>Membership Registration</h3>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required />
+      </div>
+      <div class="form-group">
+        <label for="plan">Select Plan</label>
+        <select id="plan" required>
+          <option value="">-- Choose a Plan --</option>
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Result Fitness. All rights reserved. | Designed by <a href="#">Your Name</a></p>
+  </footer>
+</body>
+</html>
