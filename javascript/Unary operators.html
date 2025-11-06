@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnaryOperators</title>
+    <script>
+        let a=2;
+        let b=a++ + ++a;
+        console.log(b); //6
+        console.log(a); //4
+        console.log("-----");
+        a=4
+        b=a++ + a++ + a++;
+        console.log(a); //7
+        console.log(b); //15
+        console.log("-----");
+        a=6;
+        b=++a +a++ +a+ a--;
+        console.log(a); //7
+        console.log(b); //30
+        console.log("-----");
+        a=9;
+        a++;
+        console.log(++a); //11
+        console.log("--------");
+        a=3;
+        a=a++ + ++a + a++;
+        console.log(a); //13
+        a=++a + a++;
+        console.log(a); //28
+        a=++a;
+        console.log(a); //29
+        a++;
+        console.log(a); //30
+        a=++a;
+        console.log(a); //31
+    </script>
+</head>
+<body>
+    <h1>Unary Operators</h1>
+    <p> pre-increment, post-increment, pre-decrement,post-decrement</p>
+</body>
+</html>

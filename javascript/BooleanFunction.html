@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooleanFunction</title>
+</head>
+<body>
+    <script>
+        let n=true;
+        console.log(n,typeof n); //true,boolean
+        n=Boolean(0);
+        console.log(n,typeof n); //false,boolean
+        n=Boolean("");
+        console.log(n,typeof n); //false,boolean
+        n=Boolean("false");
+        console.log(n,typeof n); //true,boolean
+        n=Boolean(null);
+        console.log(n,typeof n); //false,boolean
+        n=Boolean(undefined);
+        console.log(n,typeof n); //false,boolean
+        n=Boolean(NaN);
+        console.log(n,typeof n); //false,boolean
+        n=Boolean(false);
+        console.log(n,typeof n); //false,boolean
+    </script>
+</body>
+    <h1>Boolean Function</h1>
+    <p>except 6 falsy values: 0, "", false, null, undefined, NaN</p>
+    <P>all other values are truthy</P>
+</html>
