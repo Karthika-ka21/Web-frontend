@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical operators</title>
+    <script>
+        let a=4;
+        let b=8;
+        if(a++<=3 && ++b<=50){
+            console.log("if block executed")
+        }
+        else{
+            console.log("else block executed")
+        }
+        console.log(a,b); //5 8
+        a=4;
+        b=8;
+        if(a++<=10 || ++b<=50){
+            console.log("if block executed")
+        }
+        else{
+            console.log("else block executed")
+        }
+        console.log(a,b);
+    </script>
+</head>
+<body>
+    <h1>Logical Operators in JavaScript</h1>
+    <p>Logical operators are used to combine two or more conditions.</p>
+    <h2>Types of Logical Operators</h2>
+    <ul>
+        <li><strong>AND (&&)</strong>: Returns true if both operands are true.</li>
+        <li><strong>OR (||)</strong>: Returns true if at least one operand is true.</li>
+        <li><strong>NOT (!)</strong>: Reverses the logical state of its operand.</li>
+    </ul>
+</body>
+</html>

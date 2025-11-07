@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest of numbers</title>
+    <script> 
+         let a=Number(prompt("enter the first number:"));
+         let b=Number(prompt("enter the second number:"));
+         (a>b)?console.log(`${a} is the largest number`):console.log(`${b} is the largest number`);
+
+         let x=Number(prompt("enter the first number:"));
+         let y=Number(prompt("enter the second number:"));
+         let z=Number(prompt("enter the third number:"));
+         let result=(x>y)?((x>z)?x:z):((y>z)?y:z);
+         console.log(`${result} is the largest number`);
+
+         // largest = (x > y && x > z) ? x : (y > z ? y : z);
+         // let res1=(x>y)?x:y;
+         // let res2=(res1>z)?res1:z;
+         // console.log(`${res2} is the largest number`);
+        
+    </script>
+</head>
+<body>
+    <h1>Largest of Three Numbers</h1>
+
+     <p>let x=Number(prompt("enter the first number:"));<br>
+         let y=Number(prompt("enter the second number:"));<br>
+         let z=Number(prompt("enter the third number:"));<br>
+         let result=(x>y)?((x>z)?x:z):((y>z)?y:z);<br>
+         console.log(`${result} is the largest number`);<br>
+
+         // largest = (x > y && x > z) ? x : (y > z ? y : z);<br>
+         // let res1=(x>y)?x:y;<br>
+         // let res2=(res1>z)?res1:z;<br>
+         // console.log(`${res2} is the largest number`);<br>
+        </p>
+
+         Note:we must convert the prompt input to Number using Number() function because by default prompt takes input as string.<br>
+         Because of this if we don't convert it to number the comparison will be done on the basis of string which may give wrong results.
+        
+
+</body>
+</html>
