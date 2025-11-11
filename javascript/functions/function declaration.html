@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function declaration</title>
+    <script>
+        m2();
+        function m2(){
+           console.log("m2 function...")
+            wishText();
+            console.log(add()); // return n2->undefined,return n1+n2->NaN
+            console.log(add(5,6));//11
+            console.log(wishText());/* Happy bday...
+                                 undefined*/
+            console.log(add('Hi',5)); //Hi5
+        }
+        function wishText(){
+             console.log("Happy bday...");
+            
+        };//no error even if we put;
+        function add(n1,n2){
+           // return n1,n2; return 2nd value
+           return n1+n2;
+        }
+        function main(){
+            console.log("main function starts")
+            m1();
+            function m1(){  //nesting of function is possible in JavaScript
+                console.log("m1 function inside main function")
+            }
+            console.log("main function ends")
+            m1();
+        }
+        main();
+        // m1(); error
+        
+    </script>
+</head>
+<body>
+    <h1>Types of functions</h1>
+    <ul>
+        <h2><li>function declaration</li>
+        <li>function expression</li>
+        <li> Arrow function</li></h2>
+    </ul>
+    
+</body>
+</html>

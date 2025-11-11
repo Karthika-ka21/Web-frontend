@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+    <script>
+        let anms=()=>{
+            console.log("arrow function...")
+            function m1(){
+                console.log("m1 function inside arrow function")
+                let m2=function(){
+                    console.log("m2 inside m1");
+                }
+                m2();
+            }
+            m1();
+        }
+        anms();
+    </script>
+</head>
+<body>
+    <h2>Arrow function</h2>
+    <h3>used to write anonymous function easily</h3>
+    <h3>introduced in ES6</h3>
+</body>
+</html>

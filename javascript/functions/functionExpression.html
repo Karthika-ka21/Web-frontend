@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functionExpression</title>
+    <script>
+        // greetMsg(); error
+        let greetMsg=function(){   //function without name:anonymous function
+            console.log("good mrng...")
+        };
+        greetMsg();
+        let sub=function subtract(x,y){
+            let print=()=>{
+                console.log("anonymous function inside sub function");
+            }
+            print();
+           m1();
+            function m1(){
+                console.log("m1 inside sub function expression");
+            }
+            console.log(typeof m1);//function
+             return x-y;
+        }
+        console.log(sub(10,5));
+        console.log(typeof sub);
+        console.log(typeof m1);//undefined
+        
+    </script>
+</head>
+<body>
+    <h2>function expression</h2>
+    <h3>function is assigned to a variable</h3>
+</body>
+</html>
