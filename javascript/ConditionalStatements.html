@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+    <script>
+        function main(){
+        console.log("Example of if statement")
+        let num = Number(prompt("Enter a number:"));
+        if (num > 0) {
+            console.log(`${num} is a positive number.`);
+        }
+
+        console.log("Example of if...else statement")
+        if (num % 2 === 0) {
+            console.log(`${num} is an even number.`);
+        } else {
+            console.log(`${num} is an odd number.`);
+        }
+
+        console.log("Example of else if ladder")
+        if (num > 0) {
+            console.log(`${num} is positive.`);
+        } else if (num < 0) {
+            console.log(`${num} is negative.`);
+        } else {
+            console.log(`The number is zero.`);
+        }
+
+        console.log("Example of switch statement")
+        let day = prompt("Enter a day of the week (1-7):");
+        switch (day) {
+            case '1':
+                console.log("Sunday");
+                break;
+            case '2':
+                console.log("Monday");
+                break;
+            case '3':
+                console.log("Tuesday");
+                break;
+            case '4':
+                console.log("Wednesday");
+                break;
+            case '5':
+                console.log("Thursday");
+                break;
+            case '6':
+                console.log("Friday");
+                break;
+            case '7':
+                console.log("Saturday");
+                break;
+            default:
+                console.log("Invalid day");
+        }
+    }
+    main();
+    </script>
+</head>
+<body>
+    <h1>Conditional Statements in JavaScript</h1>
+    <p>Conditional statements are used to perform different actions based on different conditions. In JavaScript, we have several types of conditional statements:</p>
+
+    <h2>1. if statement</h2>
+    <h2>2. if...else statement</h2>
+    <h2>3. else if ladder</h2>
+    <h2>4. switch statement</h2>
+    
+</body>
+</html>

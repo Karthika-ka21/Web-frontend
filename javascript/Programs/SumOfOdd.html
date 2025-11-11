@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumOfOddNumbers</title>
+    <script>
+        function main(){
+            let n1=+prompt("enter the lower limit");
+            let n2=+prompt("enter the upper limit")
+            let sum=0;
+            for(let i=n1;i<=n2;i++){
+                if(i%2!=0)
+                sum+=i;
+            }
+            console.log(`sum of odd numbers from ${n1} to ${n2} is ${sum}`);
+        }
+        main();
+    </script>
+</head>
+<body>
+    <h2>program to print sum of odd numbers within a range</h2>
+</body>
+</html>

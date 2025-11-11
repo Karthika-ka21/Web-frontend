@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break&continue</title>
+    <script>
+        console.log("break");
+        let str='';
+        for(let i=1;i<=10;i++){
+            if(i==5)
+            break;  //exit from the loop
+            str+=i+' ';
+        }
+        console.log(str);
+        console.log('---------------');
+        console.log("continue");
+        str='';
+        for(let i=1;i<=10;i++){
+            if(i==5)
+            continue; //skip the rest of the stmnts in the loop and go to next iteration
+            str+=i+' ';
+        }
+        console.log(str);
+    </script>
+</head>
+<body>
+    <h1>break and continue with examples</h1>
+    
+</body>
+</html>
