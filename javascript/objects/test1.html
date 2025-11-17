@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        let obj1 = {};
+        console.log(obj1, typeof obj1);
+        let obj2 = new Object();
+        console.log(obj2, typeof obj2);
+
+        let student = {
+            sid:100,
+            sname: 'Karthika',
+            course: 'BTECH',
+            calcPer: function(){
+                console.log('82%');
+            },
+            email:'karthi@123'
+        };
+        console.log(student);
+
+
+        // create object using Object constructor with an object literal
+        let course = new Object({
+            cname: 'javaFS',
+            cid: '001'
+        });
+        course.duration='6 months';
+        course.fees=30000;
+        console.log(course);
+
+        console.log(student.calcPer);
+        console.log(course.fees);
+        console.log(course["cname"])
+        console.log(course["email"]); //undefined
+        console.log(course.email); //undefined
+
+        let studName=student.sname;
+        let studId=student.sid;
+        console.log(studName,studId);
+        console.log(course['cname'],course['fees']);
+
+        let usn='email';
+        console.log(student[usn]);
+        console.log(student.usn);//undefined
+
+        console.log(course['duration']);
+        let studentInfo=prompt("enter student info");
+        if(student[studentInfo]){
+            console.log(`hey user you are searchig for ${studentInfo} and the data is here ${studentInfo}=${student[studentInfo]}`)
+        }
+        else
+            console.log("invalid search");
+        
+    </script>
+</head>
+
+<body>
+    <h2>Object creation & Object Access</h2>
+</body>
+
+</html>

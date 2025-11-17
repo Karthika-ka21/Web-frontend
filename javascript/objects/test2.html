@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSEngine Working</title>
+    <script>
+        console.log(a)//undefined
+        // console.log(x); error->can't access x before initialization
+        let x;
+        console.log(x);
+        var a = 0;
+        var b = 20;
+        function sum(n1, n2) {
+            var res = 0;
+            res = n1 + n2;
+            return res;
+        }
+        var r1 = sum(a, b);
+        var r2 = sum(b, r1);
+        console.log(r1, r2);
+        console.log(sum);
+    </script>
+</head>
+
+<body>
+    <h1>JS engine working</h1>
+    <h2>memory is allocated before execution of code</h2>
+</body>
+
+</html>
