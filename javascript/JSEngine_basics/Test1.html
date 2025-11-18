@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+
+        console.log(main());    //first main() is executed and then,
+        // since it doesn't return anything undefined is returned
+
+        // console.log(r1,r2); error->r1 not declared
+
+        main();
+        function main() {
+            var a = 10;
+            var b = 20;
+            function sum(n1, n2) {
+                let res = 0;
+                res = n1 + n2;
+                return res;
+            }
+            var r1 = sum(a, b);
+            var r2 = sum(r1, b);
+            console.log(r1, r2);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // console.log(m1); error
+        console.log(i,x);
+        var i=10;
+        var x=5;
+        console.log(i,x);
+        let m1=function(){
+            var i=1;
+            let j=2;
+            const k=3;
+            console.log("b1 starts");
+            console.log(i,j,k);
+            
+        }
+        m1();
+        console.log(m1);    //actual function
+        console.log(m1()); //executes m1() first,then return undefined
+                            // since it is not returning anything
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

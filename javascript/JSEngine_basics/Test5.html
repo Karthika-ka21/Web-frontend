@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dummy() {
+            let arr = [1, 2, 3, 4, 5];
+            // let a2=new Array(6,7,8,9,10);
+            // console.log(a2);
+            console.log(typeof arr);
+            console.log(arr, Array.isArray(arr));
+            let arr2 = arr;
+            arr2[2] = 5;
+            console.log(arr);
+            console.log(arr2);
+        }
+
+        main();
+        // m1(); error
+        function main() {
+            console.log("main starts");
+            let nums = [1, 2, 3, 4, 5];
+            m1(nums);
+            for (let i in nums) {
+                console.log(nums[i]);
+            }
+            function m1(n) {
+                n[2] = 45;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
