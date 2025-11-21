@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let wishtxt=function(){
+            console.log("hi all.........");
+        }
+        wishtxt();
+        wishtxt(1,2,3);
+        let print=function print(){
+            for(let i=0;i<arguments.length;i++){
+                console.log(arguments[i]);
+            };
+            console.log("************");
+            }
+            
+            let display=(...args)=>{
+                for(let i=0;i<args.length;i++){
+                    console.log(args[i]);
+                }
+            }
+
+            let prod=(n1,n2,...values)=>{
+                let prod=1;
+                console.log("product");
+                for(let c of values){
+                    prod*=c;
+                }
+                console.log(prod);
+                console.log("************")
+            }
+        print(10);
+        print(1,2,3);
+        display(12,3)
+        prod(5);
+        prod(1,2,3,4); //product from 3rd number onwards->12
+        prod(1,2,3); //product from 3rd index->3
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

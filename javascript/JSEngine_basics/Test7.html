@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function main(){
+            let x=10;
+            console.log("main function");
+            function m1(){
+                console.log("m1 inside main");
+                console.log(x);
+                return 5;
+            }
+            let n;
+            return n=m1;
+        }
+        let a=main();
+        console.log(a);
+        console.log(main());
+
+    </script>
+</head>
+<body>
+    <h1>closure</h1>
+</body>
+</html>

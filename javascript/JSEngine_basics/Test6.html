@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let num =10;
+    function main(){
+        let usn="101";
+        let uname="karthika";
+        console.log("inside main");
+        function m1(){
+            let msg="hello world..";
+            console.log(num);
+            console.log(msg);
+            console.log(uname);
+            return 5;
+        }
+        console.log(m1());//m1() is executed,then return value is printed
+        console.log(m1);//function is displayed
+        let m1Val=m1;//function is assigned,if m1Val=m1(); return value is assigned
+        console.log(m1Val);
+        return(m1());
+    }
+    let retVal=main();
+    console.log(retVal);
+
+    </script>
+   
+</head>
+<body>
+    <h1>closure</h1>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(n1,n2){
+            let sum=0;
+           for(let i in arguments){
+            sum+=arguments[i];
+           }
+           return sum;
+        }
+        function display(){
+            for(let a of arguments){
+                console.log(a);
+              
+            }
+            console.log(arguments);
+              console.log("************");
+        }
+        console.log(add());
+        console.log(add(1));
+        console.log(add(1,2));
+        console.log(add(1,2,3));
+        console.log(add(1,1.2,true,'a'));
+        console.log("-----------------");
+        display();
+        display(4,5);
+        display(5,6,8,2);
+    </script>
+</head>
+<body>
+    <h2>arguments object is present in functions which stores the values we passed during function call</h2>
+    <h2>arguments object are only allowed in non arrow functions</h2>
+</body>
+</html>

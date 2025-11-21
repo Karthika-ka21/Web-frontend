@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function overloading</title>
+    <script>
+        function sum(a,b){
+            return a+b;
+        }
+        function sum(a,b,c){
+            return a+b+c;
+        }
+        console.log(sum(1,2,3)); //2nd function is executed
+        console.log(sum(1,2)); //2nd function is executed
+    </script>
+</head>
+
+<body>
+    <h1>function overloading</h1>
+    <h3>in JS function overloading by creating same function name with different arguments is not possible</h3>
+    <h3>because function is a value and the function name will store the address of function in heap memory</h3>
+    <h3>so when we overload a function the latest function will be executed</h3>
+</body>
+
+</html>

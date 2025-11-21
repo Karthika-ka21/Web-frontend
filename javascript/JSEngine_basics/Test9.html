@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+         let m1=()=>{
+            console.log("arrow function in global area");
+            console.log(this);
+        }  
+        function main(){
+            console.log("main function");
+            let m2=()=>{
+                console.log("arrow function inside another function");
+                console.log(this);
+            }
+            return m2;
+        } 
+        m1();
+        let m2=main();
+        m2();
+    </script>
+</head>
+<body>
+
+   <h1>closure for arrow function</h1>
+</body>
+</html>
