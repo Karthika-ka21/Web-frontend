@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomMethods</title>
+</head>
+<body>
+    <div>
+        <h2 id="header">Course list</h2>
+        <h3 id="header">Courses</h3>
+        <ol id="'ol">
+            <li class="cjw">Java</li>
+            <li>Python</li>
+            <li class="cjw">Web</li>
+        </ol>
+    </div>
+    <script>
+        let jw=document.getElementsByClassName('cjw');
+        console.log(jw);
+
+        let all_items=document.getElementsByTagName('li');
+        console.log(all_items);
+
+             let ol=document.querySelectorAll(".cjw");
+             console.log(ol);
+             console.log(ol.length);
+       
+        // let head=document.querySelectorAll("#header");
+        // console.log(header);
+
+   
+         let header=document.querySelector("#header");
+        console.log(header);
+
+
+        
+    </script>
+</body>
+</html>

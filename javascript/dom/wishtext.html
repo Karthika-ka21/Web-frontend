@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish Text</title>
+    <link rel="stylesheet" href="../../Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+        .container{
+            
+            margin:100px auto;
+            border: 1px solid black;
+            text-align: center;
+        }
+        button{
+            margin:10px;
+            width:150px;
+            border:none;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   
+  <div class="container">
+    <h1 id="head" > Welcome </h1>
+    <button type="button"   onclick="gmrng()">Good Morning</button>
+    <button type="button"   onclick="gaftrn()">Good AfterNoon</button>
+    <button type="button"   onclick="gngt()">Good Night</button>
+    <script>
+       function gmrng(){
+        let btn=document.getElementById("head");
+        btn.textContent="Good Morning";
+       }
+       function gaftrn(){
+        let btn=document.getElementById("head");
+        btn.textContent="Good Afternoon";
+       }
+       function gngt(){
+        let btn=document.getElementById("head");
+        btn.textContent="Good Night";
+       }
+    </script>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="../../Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="card border border-dark m-5" style="width: 20rem;">
+  <div class="card-body border border-primary">
+    <h1> Counter:<span id="counter">0</span></h1>
+    <button type="button" class="btn btn-secondary w-25" onclick="incCount()">Count</button>
+    <button type="button" class="btn btn-secondary w-25" onclick="reset()">Reset</button>
+    <script>
+        var count=0;
+        function incCount(){
+            let btn=document.getElementById("counter");
+            count++;
+            counter.textContent=count;
+        }
+
+        function reset(){
+            count=0;
+            counter.textContent=count;
+        }
+    </script>
+  </div>
+</div>
+</body>
+</html>

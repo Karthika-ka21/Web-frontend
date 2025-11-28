@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="../../Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div  class="container">
+        <div class="row">
+            <div class="col-5 m-auto mt-5 bg-body-tertiary">
+        <input type="text" id="inp" placeholder="enter task">
+        <button type="submit" id="btn" class="btn btn-dark m-5">Add task</button>
+        <div>
+            <ul class="list-group" id="display"></ol>
+        </div>
+    </div>
+        </div>
+    </div>
+    
+    <script>
+        let btnTag = document.getElementById("btn");
+        let inpTag = document.getElementById("inp");
+        let ulTag = document.getElementById('display');
+        let tasks=[];
+        btnTag.addEventListener('click', () => {
+            let text=inpTag.value;
+            tasks.unshift(text);
+            inpTag.value='';
+            print();
+        });
+
+        function print(){
+            let html="";
+            tasks.forEach((t)=>{
+                html+=`<li class="list-group-item">${t}</li>`;
+                ulTag.innerHTML=html;
+            })
+        }
+    </script>
+</body>
+</html>

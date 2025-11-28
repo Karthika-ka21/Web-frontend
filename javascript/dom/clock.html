@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="ms-auto">
+                <span class="h1"><span id="hr" >0</span>:</span>
+                <span class="h1"><span id="min" >0</span>:</span>
+                <span class="h1"><span id="sec">0</span>
+                </span>
+            </div>
+        </div>
+    </nav>
+   <script>
+    let hrTag=document.getElementById("hr");
+    let minTag=document.getElementById("min");
+    let secTag=document.getElementById("sec");
+    
+    function time(){
+    let date=new Date();
+    let hour=date.getHours();
+    hour%=12;
+    hour=hour<10?"0"+hour:hour;
+    hrTag.textContent=hour;
+    minTag.textContent=date.getMinutes()<10?"0"+date.getMinutes():date.getMinutes();
+    secTag.textContent=date.getSeconds()<10?"0"+date.getSeconds():date.getSeconds();
+    }
+    time();
+    setInterval(()=>{
+        time();
+    },1000);
+    
+   </script>
+</body>
+
+</html>

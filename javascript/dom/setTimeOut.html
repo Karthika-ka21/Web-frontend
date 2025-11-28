@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>timers</title>
+    <link rel="stylesheet" href="../../Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <script>
+        console.log("start");
+        // let id=setTimeout(()=>{
+        //     console.log("settimeout1");
+        // },2000);
+        // console.log("end");
+        //clearTimeout(id); this will end the execution of setTimeout()
+         let c=0;
+       
+        
+        
+         console.log("end");
+          let id=setInterval(()=>{
+            c++;
+            console.log("setInterval "+c);
+        },2000);
+        let id2=setTimeout(()=>{
+            console.log("settimeout");
+        },2000);
+        setTimeout(()=>{
+            clearInterval(id)
+        },10000);
+
+        
+    </script>
+</body>
+</html>
