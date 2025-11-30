@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeListHTMLCollection</title>
+</head>
+
+<body>
+    <h1 class="head">head1...</h1>
+    <h1 class="head">head2</h1>
+    <h1 class="head">head3</h1>
+    <h1 class="head">head4</h1>
+
+    <script>
+        let headQuery = document.querySelectorAll(".head");
+        let headTag = document.getElementsByClassName('head');
+        console.log(headQuery);
+        console.log(headTag);
+
+        let el = document.querySelector("h1");
+        console.log(el.childNodes);
+        console.log(document.body.children);
+        console.log(document.body.childNodes)
+
+        let p = document.createElement("p");
+        p.innerHTML = `<p class="head">This is added by JS`;//not reflected in nodeList
+        document.body.appendChild(p);
+
+    </script>
+</body>
+
+</html>

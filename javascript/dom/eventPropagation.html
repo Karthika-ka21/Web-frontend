@@ -42,5 +42,21 @@
             </div>
         </div>
     </div>
+    <script>
+        gpTag=document.getElementById("gp");
+        pTag=document.getElementById("p");
+        cTag=document.getElementById("c");
+        gp.addEventListener('click',(e)=>{
+            console.log("red");
+        },false)
+        p.addEventListener('click',(e)=>{
+            console.log("yellow");
+             e.stopPropagation();
+        },false)
+        c.addEventListener('click',(e)=>{
+            console.log("green");
+           
+        },false)
+    </script>
 </body>
 </html>
